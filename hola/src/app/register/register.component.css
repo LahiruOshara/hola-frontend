@@ -2,6 +2,9 @@
     margin: auto;
     width: 50%;
 }
+h1{
+  margin: 2% 30%;
+}
 
 .login {
     margin: auto;
@@ -10,6 +13,9 @@
     padding: 10px;
   }
   
+  form{
+    width: 80%;
+  }
   
   /* Full-width inputs */
   input[type=text], input[type=password] {
@@ -26,7 +32,7 @@
     background-color: #008CBA;
     color: white;
     padding: 14px 20px;
-    margin: 2% 20%;
+    margin: 2% 30%;
     border: none;
     cursor: pointer;
     width: 40%;
