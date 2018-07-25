@@ -1,13 +1,16 @@
 /* The sidebar menu */
 .side-bar {
-    color: rgb(0, 0, 0);
+    color: rgb(196, 0, 0);
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 13%; /* Set the width of the sidebar */
     position : fixed; /* Fixed Sidebar (stay in place on scroll) */
-    /*background-color: #e3e9ee; /* Black */
+    top:9%;
+    background-color: rgb(0, 110, 146);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     line-height: 2.3;
-    background-image:url("../../assets/side-bar.jpg");
   }
   
+  a{
+    color: aliceblue;
+  }

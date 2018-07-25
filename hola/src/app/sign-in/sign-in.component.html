@@ -2,12 +2,12 @@
   <div class="loginbox">
       <img src="../../assets/avatar.png" class="avatar">
           <h1>Login Here</h1>
-          <form>
-              <p>Username</p>
-              <input type="text" name="" placeholder="Enter Username">
-              <p>Password</p>
-              <input type="password" name="" placeholder="Enter Password">
-              <input type="submit" name="" value="Login">
+          <form (submit)="onLoginSubmit()">
+            <p>Username</p>
+            <input [(ngModel)]="username" name="username" type="text" placeholder="Username" required>
+            <p>Password</p>
+            <input [(ngModel)]="password" name="password" type="password" placeholder="Password"  required>
+            <input type="submit"  value="Login">
           </form>
       </div>
   </body>

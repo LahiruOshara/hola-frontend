@@ -1,6 +1,11 @@
+.center{
+    margin: auto;
+    width: 50%;
+}
+
 .login {
     margin: auto;
-    width: 500px;
+    width: 50%;
     border: 3px solid #008CBA;
     padding: 10px;
   }
@@ -21,10 +26,10 @@
     background-color: #008CBA;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 2% 20%;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 40%;
   }
   
   /* Add a hover effect for buttons */
