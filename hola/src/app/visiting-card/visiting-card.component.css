@@ -82,7 +82,29 @@ body{
     color: #ffc107;
   }
   
-  
+  #visitors {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 18%; 
+}
+
+#visitors td, #visitors th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#visitors tr:nth-child(even){background-color: #f2f2f2;}
+
+#visitors tr:hover {background-color: #ddd;}
+
+#visitors th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:rgb(0, 71, 95);
+    color: white;
+}
   
   
   

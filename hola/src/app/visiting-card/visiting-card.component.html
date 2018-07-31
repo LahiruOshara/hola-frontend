@@ -1,8 +1,18 @@
 <body>
+  <table id="visitors">
+    <tr>
+      <th>Name</th> 
+      <th>Log </th>
+    </tr>
+    <tr *ngFor="let visitor of visitingcards">
+        <td>{{visitor.name}}</td>
+    </tr>
+    
+  </table>
   <div class="loginbox">
       <img src="../../assets/avatar.png" class="avatar">
           <h1>Visiting Card</h1>
-          <form (submit)="onLoginSubmit()">
+          <form>
             <p>Name: </p>
             <p>Company: </p>
             <p>Security level:</p>
