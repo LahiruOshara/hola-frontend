@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { VisitingCardComponent } from './visiting-card/visiting-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './/app-routing.module';
     SignInComponent,
     RegisterComponent,
     SideBarComponent,
-    HomeComponent
+    HomeComponent,
+    VisitingCardComponent
   ],
   imports: [
     BrowserModule,
