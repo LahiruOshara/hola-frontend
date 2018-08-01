@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {GetVisitingCardsService} from '../services/get-visiting-cards.service';
+import {VISITORS } from './visitors';
 
 @Component({
   selector: 'app-visiting-card',
@@ -7,7 +8,13 @@ import {GetVisitingCardsService} from '../services/get-visiting-cards.service';
   styleUrls: ['./visiting-card.component.css']
 })
 export class VisitingCardComponent implements OnInit {
-  visitingcards: any;
+  visitingcards = VISITORS;
+  selVisitor: any;
+  // query
+  visitcard = document.querySelector('.loginbox');
+  table = document.querySelector('#visitors');
+  showItem = false;
+
   constructor(private visit: GetVisitingCardsService) { }
 
   ngOnInit() {
@@ -19,6 +26,16 @@ export class VisitingCardComponent implements OnInit {
         console.log(error);
         return false;
     });*/
+    // console.log(this.visitingcards);
   }
+
+  onSelect(visitor) {
+   // console.log('clicked');
+    this.selVisitor = visitor;
+    // const loginBox = document.querySelector('.loginbox');
+    // console.log(loginBox);
+    // loginBox.classList.add('show');
+  }
+
 
 }

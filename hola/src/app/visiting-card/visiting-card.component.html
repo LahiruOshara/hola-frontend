@@ -4,16 +4,17 @@
       <th>Name</th> 
       <th>Log </th>
     </tr>
-    <tr *ngFor="let visitor of visitingcards">
+    <tr *ngFor="let visitor of visitingcards"   (click)='onSelect(visitor)'>
         <td>{{visitor.name}}</td>
+        <td>{{visitor.log}}</td>
     </tr>
     
   </table>
-  <div class="loginbox">
+  <div *ngIf="selVisitor" class="loginbox">
       <img src="../../assets/avatar.png" class="avatar">
           <h1>Visiting Card</h1>
           <form>
-            <p>Name: </p>
+            <p>Name: {{selVisitor.name}} </p>
             <p>Company: </p>
             <p>Security level:</p>
             <p>Reason:</p>
