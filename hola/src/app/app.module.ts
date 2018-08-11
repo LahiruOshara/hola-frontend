@@ -14,6 +14,13 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { VisitingCardComponent } from './visiting-card/visiting-card.component';
 
+import { MessagingService} from '../../src/messaging.service';
+
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,8 +36,11 @@ import { VisitingCardComponent } from './visiting-card/visiting-card.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
-  providers: [],
+  providers: [MessagingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

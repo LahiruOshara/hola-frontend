@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MessagingService} from '../../messaging.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private msg: MessagingService) { }
+  message;
   ngOnInit() {
+    this.msg.getPermission();
+    this.msg.receiveMessage();
+    this.message = this.msg.currentMessage;
   }
 
 }
