@@ -19,7 +19,9 @@ import { MessagingService} from '../../src/messaging.service';
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    CoreModule
   ],
   providers: [MessagingService],
   bootstrap: [AppComponent]
